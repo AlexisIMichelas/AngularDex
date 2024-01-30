@@ -1,27 +1,37 @@
-# AngularDex
+# Pokédex Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.1.
+Ce projet est un Pokédex simple développé en utilisant le framework Angular et en utilisant l'API Pokéapi pour récupérer les données des Pokémon.
 
-## Development server
+## Fonctionnalités
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Affichage d'une liste de Pokémon avec leurs images, noms et types.
+- Possibilité de cliquer sur un Pokémon pour afficher plus de détails.
+- Pagination pour parcourir la liste de Pokémon.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prérequis
 
-## Build
+- Node.js et npm installés sur votre machine.
+- Angular CLI installé (`npm install -g @angular/cli`).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+1. Clonez ce référentiel : `git clone https://github.com/votre-utilisateur/pokedex-angular.git`
+2. Accédez au répertoire du projet : `cd pokedex-angular`
+3. Installez les dépendances : `npm install`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Utilisation
 
-## Running end-to-end tests
+1. Lancez l'application : `ng serve`
+2. Ouvrez votre navigateur et accédez à `http://localhost:4200/`
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Technologies utilisées
 
-## Further help
+- Angular
+- TypeScript
+- Pokéapi (https://pokeapi.co/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contributeur
+
+- Alexis Michelas
+
