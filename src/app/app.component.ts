@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
+import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [RouterOutlet, NavbarComponent],
 })
 export class AppComponent {
   title = 'AngularDex';

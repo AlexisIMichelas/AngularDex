@@ -1,0 +1,43 @@
+<div class="pokemon-list">
+
+  <div
+    *ngFor="let pokemon of paginatedPokemon"
+    (click)="goToPokemonDetails(pokemon.id)"
+    (keyup.enter)="goToPokemonDetails(pokemon.id)"
+    tabindex="0"
+    [ngClass]="getTypeClass(pokemon.types)"
+    class="pokemon-card"
+  >
+
+    <h2>{{ pokemon.name }}</h2>
+
+    <img [src]="pokemon.image" alt="{{ pokemon.name }} Image" />
+
+    <div class="pokemon-types">
+
+      <img
+        *ngFor="let type of pokemon.types"
+        [src]="'../../assets/' + type + '.png'"
+        [alt]="type"
+        class="type-icon"
+      />
+    </div>
+  </div>
+</div>
+
+<div class="pagination">
+  <button (click)="previousPage()" [disabled]="currentPage === 1">
+    <img
+      src="../../assets/iconePrecedent.png"
+      alt="pokeball avec une fleche suivant"
+    />
+  </button>
+
+  <button (click)="nextPage()" [disabled]="currentPage === totalPages">
+    <img
+      src="../../assets/iconeSuivantdefi.png"
+      alt="retour"
+    />
+  </button>
+
+</div>
