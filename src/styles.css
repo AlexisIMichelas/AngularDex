@@ -5,7 +5,10 @@
   max-width: 100%;
 }
 body {
-  background-color: #708090;
   max-width: 100%;
   overflow-x: hidden;
+  background-image: url('./assets/bgdex.jpg'); /* Chemin vers votre image de fond */
+  background-size: cover; /* Ajuste la taille de l'image pour couvrir l'ensemble du corps */
+  background-position: center center; /* Centre l'image de fond */
+  background-repeat: no-repeat; /* Empêche la répétition de l'image de fond */
 }
