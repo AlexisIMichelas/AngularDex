@@ -1,0 +1,37 @@
+<div class="component-detail">
+
+  <div *ngIf="pokemon" class="pokemon-details">
+
+    <h2 [ngClass]="typeColorClass">{{ pokemon.name }}</h2>
+
+
+    <img
+      [src]="pokemon.sprites.front_default"
+      alt="{{ pokemon.name }} Image"
+      [ngClass]="getTypeClass(pokemon.types)"
+    />
+
+
+    <div class="pokemon-types">
+
+      <ng-container *ngFor="let type of pokemon.types">
+
+        <img
+          [src]="'../../assets/' + type.type.name + '.png'"
+          [alt]="type.type.name"
+          class="type-icon"
+          [ngClass]="'type-icon ' + 'bg-' + type.type.name.toLowerCase()"
+        />
+      </ng-container>
+    </div>
+  </div>
+
+
+  <div class="pokedex-retour">
+
+    <a routerLink="/">
+
+      <img src="../../assets/retourPokedex.png" alt="Logo Retour au pokedex" />
+    </a>
+  </div>
+</div>
